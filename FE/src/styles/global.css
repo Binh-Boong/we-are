@@ -1,0 +1,9 @@
+.we-are-menu {
+  position: fixed;
+  top: 10px;
+  left: -5px;
+  z-index: 500;
+  padding: 8px;
+  border-radius: 5px;
+  border: 4px #ffffff solid;
+}
