@@ -3,17 +3,15 @@ import { Teams } from "components/teams/teams";
 
 const TeamPage = (): JSX.Element => {
   return (
-    <>
-      <Layout>
-        <Teams />
-      </Layout>
-    </>
-  )
-}
+    <Layout>
+      <Teams />
+    </Layout>
+  );
+};
 
 TeamPage.getInitialProps = async ({ req }: { req: any }) => {
-  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-  return { userAgent }
-}
+  const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
+  return { userAgent };
+};
 
 export default TeamPage; 

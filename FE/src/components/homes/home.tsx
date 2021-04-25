@@ -4,4 +4,4 @@ export const Home = (): JSX.Element => {
       <p className="font-bold text-gray-600 regular-40">We are?</p>
     </div>
   );
-}
+};

@@ -3,17 +3,15 @@ import { Event } from "components/events/event";
 
 const EventPage = (): JSX.Element => {
   return (
-    <>
-      <Layout>
-        <Event />
-      </Layout>
-    </>
-  )
-}
+    <Layout>
+      <Event />
+    </Layout>
+  );
+};
 
 EventPage.getInitialProps = async ({ req }: { req: any }) => {
-  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-  return { userAgent }
-}
+  const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
+  return { userAgent };
+};
 
 export default EventPage; 

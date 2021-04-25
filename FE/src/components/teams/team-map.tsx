@@ -1,25 +1,22 @@
 import { useRef, useEffect } from "react";
-import { Point } from "types/point.module";
+import { Point } from "types/point";
 
-export const TeamMap = ({
-  root,
-  points,
-  width,
-  height,
-}: {
-  root: Point,
-  points: Point[],
-  width: number,
-  height: number,
-}): JSX.Element => {
+export interface TeamMapProps {
+  root: Point;
+  points: Point[];
+  width: number;
+  height: number;
+}
+
+export const TeamMap = (props: TeamMapProps): JSX.Element => {
   const canvas = useRef<HTMLCanvasElement>(null);
-  const style = { width, height };
+  const style = { width: props.width, height: props.height };
 
   useEffect(() => {
     if (canvas) {
       const context = canvas.current?.getContext("2d");
-      const pixelRatio = window.devicePixelRatio;
-      context?.clearRect(0, 0, width, height);
+      // const pixelRatio = window.devicePixelRatio;
+      context?.clearRect(0, 0, props.width, props.height);
       if (context) {
         // context.save();
         // context.fillStyle = "#ffffff00";
@@ -51,11 +48,11 @@ export const TeamMap = ({
         // });
       }
     }
-  }, [root, points, height, width])
+  }, [props]);
 
   return (
     <>
-      <canvas ref={canvas} width={width} height={height} style={style} />
+      <canvas ref={canvas} width={props.width} height={props.height} style={style} />
     </>
   );
-}
+};

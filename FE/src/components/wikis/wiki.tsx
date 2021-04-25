@@ -20,18 +20,18 @@ export const Wiki = (): JSX.Element => {
               <a 
                 href="https://vi.wikipedia.org/wiki/Th%E1%BA%A3o_lu%E1%BA%ADn_Th%C3%A0nh_vi%C3%AAn:Kothenao2012" 
                 target="_blank"
-                className="ml-10 text-blue-800"
+                className="ml-10 text-blue-800" rel="noreferrer"
               >
                 (wiki page)
               </a>
             </p>
-            <p><b>A few questions.</b></p>
+            <p><strong>A few questions.</strong></p>
             <ul className="ml-8 list-disc">
               <li>Who are we?</li>
               <li>What do we need?</li>
               <li>What Have We Got?</li>
             </ul>
-            <p className="mt-4"><b>The answers.</b></p>
+            <p className="mt-4"><strong>The answers.</strong></p>
             <ul className="ml-8 list-disc">
               <li>We are the ones who need fun and sharing.</li>
               <li>We need to forget about stressful moments in work and society.</li>
@@ -49,7 +49,7 @@ export const Wiki = (): JSX.Element => {
               # How to vote.
             </p>
             <ul className="ml-8 list-disc">
-              <li>Go to <a className="text-blue-800" target="_blank" href="https://justyousaid.com/">Vote Page</a></li>
+              <li>Go to <a className="text-blue-800" target="_blank" href="https://justyousaid.com/" rel="noreferrer">Vote Page</a></li>
               <li>Enter your name <i className="text-xs">OR</i> login with account art.</li>
               <li>Start choosing votes.</li>
               <li><i>In the new feature we update login with google account.</i></li>
@@ -70,7 +70,7 @@ export const Wiki = (): JSX.Element => {
             <p className="py-2 mt-6 mb-4 text-3xl text-gray-800 border-0 border-b border-gray-300 border-solid">
               # Development.
             </p>
-            <p><i>Developed by our team - <b>'WE TEAM'</b>.</i></p>
+            <p><i>Developed by our team - <strong>&apos;WE TEAM&apos;</strong>.</i></p>
             <p><i>In the near future, we will develop a page to share knowledge or questions about technology for members.</i></p>
             <p><code>Improve code every day</code></p>
             
@@ -85,4 +85,4 @@ export const Wiki = (): JSX.Element => {
       </div>
     </div>
   );
-}
+};

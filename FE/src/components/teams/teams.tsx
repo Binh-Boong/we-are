@@ -7,17 +7,13 @@ import { TeamMap } from "components/teams/team-map";
 
 import * as APIUri from "constants/api";
 
-import { Team } from "types/teams.module";
-import { Point } from "types/point.module";
+import { Team } from "types/teams";
+import { Point } from "types/point";
 
 export const Teams = (): JSX.Element => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [height, setHeight] = useState<number>(1000);
   const [width, setWidth] = useState<number>(1000);
-  const [position, setPosition] = useState<Point>({
-    x: 0,
-    y: 0,
-  });
   const [calPoint, setCalPoint] = useState<{
     root: Point,
     points: Point[],
@@ -30,29 +26,25 @@ export const Teams = (): JSX.Element => {
         if (data && typeof data === "object") {
           setTeams(data);
         }
-      }).catch(err_json => {
+      }).catch(() => {
         setTeams([]);
-      })
-    }).catch(err => {
+      });
+    }).catch(() => {
       setTeams([]);
-    })
-  }, [])
+    });
+  }, []);
 
   useEffect(() => {
     if (containerRef && containerRef.current) {
       const bound = containerRef.current.getBoundingClientRect();
       setWidth(bound.width);
       setHeight(bound.height);
-      setPosition({
-        x: bound.x,
-        y: bound.y
-      });
 
       const points = randomPoints(teams.length, { x: 0, y: 0}, { x: bound.width, y: bound.height });
       setHeight(points.height);
       setCalPoint(points);
     }
-  }, [teams])
+  }, [teams]);
 
   useEffect(() => {
     const resizeListener = () => {
@@ -60,24 +52,20 @@ export const Teams = (): JSX.Element => {
         const bound = containerRef.current.getBoundingClientRect();
         setWidth(bound.width);
         setHeight(bound.height);
-        setPosition({
-          x: bound.x,
-          y: bound.y
-        });
   
         const points = randomPoints(teams.length, { x: 0, y: 0}, { x: bound.width, y: bound.height });
         setHeight(points.height);
         setCalPoint(points);
       }
-    }
+    };
 
     window.addEventListener("resize", resizeListener);
 
     return () => {
       // remove resize listener
       window.removeEventListener("resize", resizeListener);
-    }
-  }, [containerRef, teams, calPoint])
+    };
+  }, [containerRef, teams, calPoint]);
 
   return (
     <div className="flex items-center justify-center w-full min-h-screen p-1 md:p-8 bg-teams">
@@ -117,4 +105,4 @@ export const Teams = (): JSX.Element => {
       </div>
     </div>
   );
-}
+};

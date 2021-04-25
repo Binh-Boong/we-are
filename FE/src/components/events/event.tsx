@@ -23,13 +23,13 @@ export const Event = (): JSX.Element => {
               <p>You wanna chill with us tonight.</p>
               <p>
                 <code>
-                  "Nếu mà mệt quá, giữa thành phố sống chồng lên nhau.
+                  &quot;Nếu mà mệt quá, giữa thành phố sống chồng lên nhau.
                 </code>
               </p>
               <p>
                 <code>
-                  Cùng lắm thì mình <b>chốt lịch</b>, 
-                  mình <b>dọn đồ</b> và cùng đi <b>chill."</b>.
+                  Cùng lắm thì mình <strong>chốt lịch</strong>, 
+                  mình <strong>dọn đồ</strong> và cùng đi <strong>chill.&quot;</strong>.
                 </code>
               </p>
               <p><i>→ Mr.Đen Râu ←</i></p>
@@ -44,7 +44,7 @@ export const Event = (): JSX.Element => {
               <p>Remove all sadness and pressure and help you share your feelings.</p>
               <p>
                 <code>
-                  "When you win you deserve a drink. When you failed, you really need it."
+                  &quot;When you win you deserve a drink. When you failed, you really need it.&quot;
                 </code>
               </p>
               <p><i>→ Mr.Napoleon Bonaparte ←</i></p>
@@ -64,12 +64,12 @@ export const Event = (): JSX.Element => {
               <p>With whom to eat tonight?</p>
               <p>
                 <code>
-                  Do you know "Chân gà nướng!"
+                  Do you know &quot;Chân gà nướng!&quot;
                 </code>
               </p>
               <p>
                 <code>
-                  "Enemies kill each other with bullets. Don't kill you by fasting with food and drinks..."
+                  &quot;Enemies kill each other with bullets. Don&apos;t kill you by fasting with food and drinks...&quot;
                 </code>
               </p>
               <p><i>→ Mr.Cut The Wind ←</i></p>
@@ -79,4 +79,4 @@ export const Event = (): JSX.Element => {
       </div>
     </div>
   );
-}
+};

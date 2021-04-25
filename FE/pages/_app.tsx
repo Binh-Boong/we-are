@@ -1,6 +1,6 @@
 import React from "react";
 import { AppProps } from "next/app";
-import Head from 'next/head';
+import Head from "next/head";
 
 import "../src/styles/tailwind.css";
 import "../src/styles/global.css";
