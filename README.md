@@ -1,41 +1,34 @@
 # WE ARE
+Updates membership & events & votes & anything.
 
-Update covid 19 situation in the world
+## Currently
+> Home page
+> Event page
+> Wiki page
 
-  - Dashboard
-  - Detail country
-
-# New Features!
-
+## New Features
 You can also:
+> Upgrade old designs.
+> Development other pages like __personal detail__, __vote__, __forum__.
 
-> Updated with the latest information about covid 19
-> and provide reasonable solutions for yourself.
-> ___Design by Binh NA___
-
-### Tech
-
+## Tech
 Open source projects:
-
 * [React Hooks](https://reactjs.org/docs/hooks-intro.html) - A JavaScript library for building user interfaces.
 * [NextJS](https://nextjs.org/) - The React Framework for Production.
 * [Typescript](https://www.typescriptlang.org/) - TypeScript extends JavaScript by adding types.
 * [Tailwind Css](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
-* [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * [ESLint](https://eslint.org/) - Find and fix problems in your JavaScript code.
-* [Prettier](https://prettier.io/) - Prettier is an opinionated code formatter.
 
-And Covid 19 is open source with a public repository on GitHub.
+And WE-ARE is open source with a public repository on GitHub.
 
-### Installation
-
+## Installation
 Dillinger requires [Node.js](https://nodejs.org/) to run.
-
 Install the dependencies and devDependencies and start the server.
 
 #### yarn
+
 ```sh
-$ cd covid-19
+$ cd we-are
 $ yarn install
 $ yarn run build
 $ yarn run dev
@@ -43,23 +36,21 @@ $ yarn run dev
 
 #### npm/npx
 ```sh
-$ cd covid-19
+$ cd we-are
 $ npm install
 $ npm run build
 $ npm run dev
 ```
 
-For production environments...
-
+For production environments.
 ```sh
 $ create file .env.production
 $ set API_HOST = "host name"
 $ yarn run dev / npm run dev
 ```
 
-### Development
-
-N/A
+## Developers
+``Binh-NA`` ``Duy-ND``
 
 #### Building for source
 For production release:
