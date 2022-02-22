@@ -1,4 +1,5 @@
 # WE ARE
+
 Updates membership & events & votes & anything.
 
 ## Currently
